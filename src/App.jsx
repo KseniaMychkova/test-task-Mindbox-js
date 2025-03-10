@@ -12,7 +12,7 @@ function App() {
   const [filteredTasks, setFilteredTasks] = useState(tasks);
 
   useEffect(() => {
-    setCountActiveTasks(tasks.filter(el => !el.completed).length);
+    setCountActiveTasks(tasks.filter((el) => !el.completed).length);
   }, [tasks]);
 
   useEffect(() => {
